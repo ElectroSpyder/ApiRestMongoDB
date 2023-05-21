@@ -396,3 +396,4 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+/AspNet.Core.MongoDB.Api/AspNet.Core.MongoDB.Api/appsettings.json
