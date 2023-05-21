@@ -16,7 +16,7 @@ namespace AspNet.Core.MongoDB.Api.Controllers
         }
 
         [HttpGet]
-        public async Task<List<Movies>> Get() => await _dbService.GetMoviesAsync(); 
+        public async Task<List<Users>> Get() => await _dbService.GetMoviesAsync(); 
        
 
     }
