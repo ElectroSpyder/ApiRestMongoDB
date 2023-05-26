@@ -13,7 +13,7 @@ namespace AspNet.Core.MongoDB.Services
 
         public MongoDBService(IOptions<MongoDBSettings> mongoDBSettings)
         {
-           MongoClient client =  new MongoClient(mongoDBSettings.Value.ConnectionURI);
+           MongoClient client =  new(mongoDBSettings.Value.ConnectionURI);
             IMongoDatabase database = client.GetDatabase(mongoDBSettings.Value.DatabaseName);
             _moviesCollection = database.GetCollection<Users>(mongoDBSettings.Value.CollectionName);
         }

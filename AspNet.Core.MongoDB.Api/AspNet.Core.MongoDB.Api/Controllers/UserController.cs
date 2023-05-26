@@ -6,11 +6,11 @@ namespace AspNet.Core.MongoDB.Api.Controllers
 {
     [Controller]
     [Route("api/[controller]")]
-    public class MoviesController : Controller
+    public class UserController : Controller
     {
         private readonly MongoDBService _dbService;
 
-        public MoviesController(MongoDBService dbService)
+        public UserController(MongoDBService dbService)
         {
             _dbService = dbService;
         }
